@@ -4,9 +4,13 @@ public class fibonacci {
         Scanner sc = new Scanner(System.in);
         System.out.println("Cuantos numeros de Fibonacci desea: ");
         int n=sc.nextInt();
-        int [] fibonacci = new int[n];
+        int [] fibo = new int[n];
         for (int i = 1; i < n; i++) {
-            fibonacci[]= fibonacci[]
+            fibo[i]= fibo[i-1] + fibo[i+2];
+        }
+        System.out.println("Serie Fibonacci: ");
+         for (int i = 1; i < n; i++) {
+            System.out.println(fibo[i]);
         }
     }
 }
